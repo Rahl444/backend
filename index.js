@@ -39,6 +39,14 @@ app.get('/getData', async(req, res)=>{
 
 })
 
-app.listen(5004, () => {
-    console.log("Server started on Port 5004");
+app.get('/', async(req, res)=>{
+
+    //const result = await db.collection("rahul").find({}).toArray()
+    //console.log(result);
+    res.send("Media Storage System - Backend");
+
+})
+
+app.listen(4000, () => {
+    console.log("Server started on Port 4000");
 })     
